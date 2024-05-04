@@ -64,7 +64,7 @@ class _BuyListState extends State<BuyList> {
               ],
             ),
             SizedBox(
-              height: 100,
+              height: 20,
             ),
           ],
         ),

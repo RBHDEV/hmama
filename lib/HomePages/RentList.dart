@@ -64,7 +64,7 @@ class _RentListState extends State<RentList> {
               ],
             ),
             SizedBox(
-              height: 100,
+              height: 20,
             ),
           ],
         ),
