@@ -18,11 +18,6 @@ class _HomeState extends State<daHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: Text('حمامة'),
-        foregroundColor: daBright,
-        backgroundColor: daPrimary,
-      ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
