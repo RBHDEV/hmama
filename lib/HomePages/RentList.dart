@@ -15,58 +15,7 @@ class _RentListState extends State<RentList> {
       child: Padding(
         padding: EdgeInsets.only(left: 20, right: 20, top: 20),
         child: Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                buy(),
-                buy(),
-              ],
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                buy(),
-                buy(),
-              ],
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                buy(),
-                buy(),
-              ],
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                buy(),
-                buy(),
-              ],
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                buy(),
-                buy(),
-              ],
-            ),
-            SizedBox(
-              height: 20,
-            ),
-          ],
+          children: [],
         ),
       ),
     );
