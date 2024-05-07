@@ -26,8 +26,8 @@ class _BuyListState extends State<RentList> {
         itemBuilder: (context, index) {
           CardList item = simpleRentList[index];
           return InkWell(
-            onTap: () async {
-              await Navigator.push(
+            onTap: () {
+              Navigator.push(
                   context,
                   MaterialPageRoute(
                       builder: (context) => daRentDetails(data: index)));

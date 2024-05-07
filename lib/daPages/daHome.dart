@@ -113,7 +113,10 @@ class _HomeState extends State<daHome> {
               });
             },
             children: [BuyList(), RentList()],
-          ))
+          )),
+          SizedBox(
+            height: 10,
+          ),
         ],
       ),
     );

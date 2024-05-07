@@ -34,8 +34,8 @@ class _daBuyDetailsState extends State<daRentDetails> {
                     bottomRight: Radius.circular(30)),
                 child: Image.asset(
                   simpleRentList[widget.data].pic,
-                  fit: BoxFit.cover,
-                  alignment: Alignment.topCenter,
+                  fit: BoxFit.fitWidth,
+                  alignment: Alignment(0, -0.5),
                 ),
               ),
             ),

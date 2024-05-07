@@ -51,26 +51,26 @@ List<CardList> simpleBuyList = [
       price: '2200 دج'),
   CardList(
       id: 7,
+      pic: 'Image/Jolery/jolery2.jpg',
+      name: 'أقراط الفراشة',
+      price: '750 دج'),
+  CardList(
+      id: 8,
       pic: 'Image/Jolery/jolery3.jpg',
       name: 'مشبك شعر',
       price: '300 دج'),
-  CardList(
-      id: 8,
-      pic: 'Image/Jolery/jolery4.jpg',
-      name: 'سوار البرسيم',
-      price: '550 دج'),
   CardList(
       id: 9,
       pic: 'Image/Packs/packs3.jpg',
       name: 'حقيبة الظهر',
       price: '4400 دج'),
   CardList(
-      id: 11,
-      pic: 'Image/Jolery/jolery2.jpg',
-      name: 'أقراط الفراشة',
-      price: '750 دج'),
+      id: 10,
+      pic: 'Image/Jolery/jolery4.jpg',
+      name: 'سوار البرسيم',
+      price: '550 دج'),
   CardList(
-      id: 12,
+      id: 11,
       pic: 'Image/Packs/packs4.jpg',
       name: 'حقيبة وردية',
       price: '2800 دج')

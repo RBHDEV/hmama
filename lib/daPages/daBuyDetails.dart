@@ -35,7 +35,7 @@ class _daBuyDetailsState extends State<daBuyDetails> {
                 child: Image.asset(
                   simpleBuyList[widget.data].pic,
                   fit: BoxFit.cover,
-                  alignment: Alignment.topCenter,
+                  alignment: Alignment(0, -0.5),
                 ),
               ),
             ),

@@ -26,8 +26,8 @@ class _BuyListState extends State<BuyList> {
         itemBuilder: (context, index) {
           CardList item = simpleBuyList[index];
           return InkWell(
-            onTap: () async {
-              await Navigator.push(
+            onTap: () {
+              Navigator.push(
                   context,
                   MaterialPageRoute(
                       builder: (context) => daBuyDetails(data: index)));

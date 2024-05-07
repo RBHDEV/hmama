@@ -4,6 +4,7 @@ import 'package:hmama/Cards/BuyCard.dart';
 import 'package:hmama/Models/CardList.dart';
 import 'package:hmama/daColors.dart';
 import 'package:hmama/daPages/daBuyDetails.dart';
+import 'package:hmama/daPages/daRentDetails.dart';
 
 class daListchoosedrent extends StatefulWidget {
   final int data;
@@ -26,12 +27,12 @@ class _ListchoosedbuyState extends State<daListchoosedrent> {
         name: 'فستان تقليدي',
         price: '5500 دج'),
     CardList(
-        id: 2,
+        id: 4,
         pic: 'Image/Tradition/trad3.jpeg',
         name: 'ثياب تقليدي',
         price: '9500 دج'),
     CardList(
-        id: 3,
+        id: 9,
         pic: 'Image/Tradition/trad4.jpeg',
         name: 'فستان تقليدي',
         price: '6800 دج'),
@@ -39,22 +40,22 @@ class _ListchoosedbuyState extends State<daListchoosedrent> {
 
   List<CardList> Night = [
     CardList(
-        id: 0,
+        id: 3,
         pic: 'Image/Night/night1.jpeg',
         name: 'ثوب أبيض',
         price: '5000 دج'),
     CardList(
-        id: 1,
+        id: 7,
         pic: 'Image/Night/night2.jpeg',
         name: 'ثوب وردي',
         price: '6000 دج'),
     CardList(
-        id: 2,
+        id: 8,
         pic: 'Image/Night/night3.jpeg',
         name: 'ثوب طويل وردي',
         price: '9000 دج'),
     CardList(
-        id: 3,
+        id: 11,
         pic: 'Image/Night/night4.jpeg',
         name: 'ثوب طويل أبيض',
         price: '11000 دج'),
@@ -62,22 +63,22 @@ class _ListchoosedbuyState extends State<daListchoosedrent> {
 
   List<CardList> Wed = [
     CardList(
-        id: 0,
+        id: 2,
         pic: 'Image/Wed/wed1.jpeg',
         name: 'فستان زفاف',
         price: '15000 دج'),
     CardList(
-        id: 1,
+        id: 5,
         pic: 'Image/Wed/wed2.jpeg',
         name: 'فستان زفاف',
         price: '13000 دج'),
     CardList(
-        id: 2,
+        id: 6,
         pic: 'Image/Wed/wed3.jpeg',
         name: 'فستان زفاف',
         price: '18000 دج'),
     CardList(
-        id: 3,
+        id: 10,
         pic: 'Image/Wed/wed4.jpeg',
         name: 'فستان زفاف',
         price: '22000 دج'),
@@ -149,11 +150,13 @@ class _ListchoosedbuyState extends State<daListchoosedrent> {
               itemBuilder: (context, index) {
                 CardList item = currentList[index];
                 return InkWell(
-                  onTap: () async {
-                    await Navigator.push(
+                  onTap: () {
+                    Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => daBuyDetails(data: index)));
+                            builder: (context) =>
+                                daRentDetails(data: item.id)));
+                    print('This is the item : ${item.id}');
                   },
                   child: Card(
                     elevation: 5,

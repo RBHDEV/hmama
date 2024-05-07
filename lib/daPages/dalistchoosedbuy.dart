@@ -26,12 +26,12 @@ class _ListchoosedbuyState extends State<daListchoosedbuy> {
         name: 'قميص أزرق',
         price: '1500 دج'),
     CardList(
-        id: 2,
+        id: 5,
         pic: 'Image/Cloths/cloths3.jpg',
         name: 'سترة أبيض',
         price: '1700 دج'),
     CardList(
-        id: 3,
+        id: 6,
         pic: 'Image/Cloths/cloths4.jpg',
         name: 'قميص بالذراع',
         price: '2200 دج'),
@@ -39,22 +39,22 @@ class _ListchoosedbuyState extends State<daListchoosedbuy> {
 
   List<CardList> Jolery = [
     CardList(
-        id: 0,
+        id: 2,
         pic: 'Image/Jolery/jolery1.jpg',
         name: 'سوار بتعليقة فراشة',
         price: '1000 دج'),
     CardList(
-        id: 1,
+        id: 7,
         pic: 'Image/Jolery/jolery2.jpg',
         name: 'أقراط الفراشة',
         price: '750 دج'),
     CardList(
-        id: 2,
+        id: 8,
         pic: 'Image/Jolery/jolery3.jpg',
         name: 'مشبك شعر',
         price: '300 دج'),
     CardList(
-        id: 3,
+        id: 10,
         pic: 'Image/Jolery/jolery4.jpg',
         name: 'سوار البرسيم',
         price: '550 دج'),
@@ -77,7 +77,7 @@ class _ListchoosedbuyState extends State<daListchoosedbuy> {
         name: 'حقيبة الظهر',
         price: '4400 دج'),
     CardList(
-        id: 12,
+        id: 11,
         pic: 'Image/Packs/packs4.jpg',
         name: 'حقيبة وردية',
         price: '2800 دج')
@@ -149,11 +149,12 @@ class _ListchoosedbuyState extends State<daListchoosedbuy> {
               itemBuilder: (context, index) {
                 CardList item = currentList[index];
                 return InkWell(
-                  onTap: () async {
-                    await Navigator.push(
+                  onTap: () {
+                    Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => daBuyDetails(data: index)));
+                            builder: (context) => daBuyDetails(data: item.id)));
+                    print('This is the item : ${item.id}');
                   },
                   child: Card(
                     elevation: 5,
