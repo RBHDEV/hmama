@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hmama/Home.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:hmama/LoginPage.dart';
+import 'package:hmama/daPages/daHome.dart';
 import 'package:hmama/daPages/daList.dart';
 
 void main() {
@@ -23,9 +25,11 @@ class hmama extends StatelessWidget {
       supportedLocales: [
         Locale('ar'), // Arabic
       ],
-      initialRoute: '/',
+      initialRoute: '/LoginPage',
       routes: {
         '/': (context) => Home(),
+        '/discover': (context) => daHome(),
+        '/LoginPage': (context) => LoginPage()
       },
     );
   }

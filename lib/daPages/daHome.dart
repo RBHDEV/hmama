@@ -1,3 +1,4 @@
+import 'package:arabic_font/arabic_font.dart';
 import 'package:flutter/material.dart';
 import 'package:hmama/HomePages/BuyList.dart';
 import 'package:hmama/HomePages/RentList.dart';
@@ -17,7 +18,7 @@ class _HomeState extends State<daHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: dawhite,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
@@ -37,7 +38,8 @@ class _HomeState extends State<daHome> {
                       backgroundColor:
                           (aPage == 0) ? daThird : daThird.withOpacity(0.6),
                       foregroundColor: daBright,
-                      textStyle: TextStyle(
+                      textStyle: ArabicTextStyle(
+                          arabicFont: ArabicFont.avenirArabic,
                           fontSize: 18,
                           fontWeight: (aPage == 0)
                               ? FontWeight.bold
@@ -73,7 +75,8 @@ class _HomeState extends State<daHome> {
                       backgroundColor:
                           (aPage == 1) ? daThird : daThird.withOpacity(0.6),
                       foregroundColor: daBright,
-                      textStyle: TextStyle(
+                      textStyle: ArabicTextStyle(
+                          arabicFont: ArabicFont.avenirArabic,
                           fontSize: 18,
                           fontWeight: (aPage == 1)
                               ? FontWeight.bold

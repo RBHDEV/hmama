@@ -66,6 +66,10 @@ flutter:
     - Image/Cloths/
     - Image/Packs/
     - Image/Jolery/
+    - Image/Icons/
+    - Image/Night/
+    - Image/Tradition/
+    - Image/Wed/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see

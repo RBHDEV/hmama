@@ -41,34 +41,31 @@ class _HomeState extends State<Home> {
         index: tab,
         children: _pages,
       ),
-      bottomNavigationBar: Container(
-        color: daBetween,
-        child: GNav(
-            tabBackgroundColor: daBright.withOpacity(0.5),
-            color: daDark,
-            backgroundColor: daBetween,
-            gap: 4,
-            onTabChange: (value) {
-              setState(() {
-                tab = value;
-                print('This is the page :  $value');
-              });
-            },
-            tabs: [
-              GButton(
-                icon: (tab == 0) ? Icons.search : Icons.search_outlined,
-                text: 'إكتشاف',
-              ),
-              GButton(
-                icon: (tab == 1) ? Icons.list : Icons.list_outlined,
-                text: 'تصنيفات',
-              ),
-              GButton(
-                icon: (tab == 2) ? Icons.person : Icons.person_outline,
-                text: 'الحساب',
-              ),
-            ]),
-      ),
+      bottomNavigationBar: GNav(
+          tabBackgroundColor: daBright.withOpacity(0.5),
+          color: daDark,
+          backgroundColor: daBetween,
+          gap: 4,
+          onTabChange: (value) {
+            setState(() {
+              tab = value;
+              print('This is the page :  $value');
+            });
+          },
+          tabs: [
+            GButton(
+              icon: (tab == 0) ? Icons.search : Icons.search_outlined,
+              text: 'إكتشاف',
+            ),
+            GButton(
+              icon: (tab == 1) ? Icons.list : Icons.list_outlined,
+              text: 'تصنيفات',
+            ),
+            GButton(
+              icon: (tab == 2) ? Icons.person : Icons.person_outline,
+              text: 'الحساب',
+            ),
+          ]),
     );
   }
 }

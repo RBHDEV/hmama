@@ -1,3 +1,4 @@
+import 'package:arabic_font/arabic_font.dart';
 import 'package:flutter/material.dart';
 
 class buy extends StatefulWidget {
@@ -32,7 +33,14 @@ class _buyState extends State<buy> {
             flex: 1,
             child: Padding(
               padding: EdgeInsets.all(4.0),
-              child: Text(widget.name, textAlign: TextAlign.center),
+              child: Text(
+                widget.name,
+                textAlign: TextAlign.center,
+                style: ArabicTextStyle(
+                    arabicFont: ArabicFont.avenirArabic,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w500),
+              ),
             ),
           ),
           Expanded(
@@ -42,8 +50,10 @@ class _buyState extends State<buy> {
               child: Text(
                 widget.price,
                 textAlign: TextAlign.left,
-                style: TextStyle(
-                    color: Colors.green.shade800, fontWeight: FontWeight.bold),
+                style: ArabicTextStyle(
+                    arabicFont: ArabicFont.avenirArabic,
+                    color: Colors.green.shade800,
+                    fontWeight: FontWeight.bold),
               ),
             ),
           ),

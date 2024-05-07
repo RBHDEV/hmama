@@ -4,14 +4,14 @@ import 'package:arabic_font/arabic_font.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class listofBuy extends StatelessWidget {
+class listofRent extends StatelessWidget {
   List<String> Icons = [
-    'Image/Icons/dress.png',
-    'Image/Icons/necklace.png',
-    'Image/Icons/handbag.png',
+    'Image/Icons/tradition.png',
+    'Image/Icons/dressnight.png',
+    'Image/Icons/dresswed.png',
   ];
 
-  List<String> Title = ['ألبسة', 'اكسسوارات', 'حقائب'];
+  List<String> Title = ['ألبسة تقليدية', 'فساتين سهرة', 'فساتين زفاف'];
 
   @override
   Widget build(BuildContext context) {
@@ -49,6 +49,12 @@ class listofBuy extends StatelessWidget {
                 fit: StackFit.expand,
                 children: [
                   Align(
+                    alignment: Alignment(-1, 0),
+                    child: Image.asset(
+                      Icons[index],
+                    ),
+                  ),
+                  Align(
                       alignment: Alignment(0.7, 0),
                       child: Container(
                         padding:
@@ -64,12 +70,6 @@ class listofBuy extends StatelessWidget {
                           textAlign: TextAlign.center,
                         ),
                       )),
-                  Align(
-                    alignment: Alignment(-1, 0),
-                    child: Image.asset(
-                      Icons[index],
-                    ),
-                  ),
                 ],
               ),
             ),

@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class CardList {
   int id;
   String pic;
@@ -72,4 +74,58 @@ List<CardList> simpleBuyList = [
       pic: 'Image/Packs/packs4.jpg',
       name: 'حقيبة وردية',
       price: '2800 دج')
+];
+
+List<CardList> simpleRentList = [
+  CardList(
+      id: 0,
+      pic: 'Image/Tradition/trad1.jpeg',
+      name: 'ثياب تقليدي',
+      price: '3500 دج'),
+  CardList(
+      id: 1,
+      pic: 'Image/Tradition/trad2.jpeg',
+      name: 'فستان تقليدي',
+      price: '5500 دج'),
+  CardList(
+      id: 2, pic: 'Image/Wed/wed1.jpeg', name: 'فستان زفاف', price: '15000 دج'),
+  CardList(
+      id: 3,
+      pic: 'Image/Night/night1.jpeg',
+      name: 'ثوب أبيض',
+      price: '5000 دج'),
+  CardList(
+      id: 4,
+      pic: 'Image/Tradition/trad3.jpeg',
+      name: 'ثياب تقليدي',
+      price: '9500 دج'),
+  CardList(
+      id: 5, pic: 'Image/Wed/wed2.jpeg', name: 'فستان زفاف', price: '13000 دج'),
+  CardList(
+      id: 6, pic: 'Image/Wed/wed3.jpeg', name: 'فستان زفاف', price: '18000 دج'),
+  CardList(
+      id: 7,
+      pic: 'Image/Night/night2.jpeg',
+      name: 'ثوب وردي',
+      price: '6000 دج'),
+  CardList(
+      id: 8,
+      pic: 'Image/Night/night3.jpeg',
+      name: 'ثوب طويل وردي',
+      price: '9000 دج'),
+  CardList(
+      id: 9,
+      pic: 'Image/Tradition/trad4.jpeg',
+      name: 'فستان تقليدي',
+      price: '6800 دج'),
+  CardList(
+      id: 10,
+      pic: 'Image/Wed/wed4.jpeg',
+      name: 'فستان زفاف',
+      price: '22000 دج'),
+  CardList(
+      id: 11,
+      pic: 'Image/Night/night4.jpeg',
+      name: 'ثوب طويل أبيض',
+      price: '11000 دج'),
 ];
