@@ -139,7 +139,10 @@ class SignUpPage extends StatefulWidget {
 class _SignUpPageState extends State<SignUpPage> {
   void showCustomSnackbarSignUp(BuildContext context) {
     final snackbar = SnackBar(
-      content: Text("لقد تم إنشاء حسابك بنجاح"),
+      content: Text(
+        "لقد تم إنشاء حسابك بنجاح",
+        style: ArabicTextStyle(arabicFont: ArabicFont.avenirArabic),
+      ),
       backgroundColor: daSecond,
       duration: Duration(seconds: 3), // Snackbar duration of 3 seconds
     );

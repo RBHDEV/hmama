@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:arabic_font/arabic_font.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:hmama/daPages/dalistchoosedbuy.dart';
 
 class listofBuy extends StatelessWidget {
   List<String> Icons = [
@@ -21,7 +22,12 @@ class listofBuy extends StatelessWidget {
       itemBuilder: (context, index) {
         return InkWell(
           onTap: () {
-            Navigator.pushNamed(context, '/discover');
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => daListchoosedbuy(
+                          data: index,
+                        )));
           },
           child: Container(
             height: 150,

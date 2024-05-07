@@ -1,8 +1,8 @@
+import 'package:arabic_font/arabic_font.dart';
 import 'package:flutter/material.dart';
-import 'package:arabic_font/arabic_font.dart'; // Assuming this package exists as you have used.
 import 'package:hmama/ListPages/ListofRent.dart';
 import 'package:hmama/ListPages/ListsofBuy.dart';
-import 'package:hmama/daColors.dart'; // Assuming these color definitions are correct.
+import 'package:hmama/daColors.dart';
 
 class daList extends StatefulWidget {
   const daList({super.key});
@@ -15,7 +15,7 @@ class _daListState extends State<daList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: dawhite, // Ensure this color is defined in daColors.dart
+      backgroundColor: dawhite,
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(15.0),
         child: Column(
@@ -27,14 +27,13 @@ class _daListState extends State<daList> {
                 '• تصنيفات الشراء',
                 textAlign: TextAlign.right,
                 style: ArabicTextStyle(
-                  arabicFont: ArabicFont
-                      .dubai, // Assuming this class and constructor exists
+                  arabicFont: ArabicFont.dubai,
                   fontSize: 25,
                 ),
               ),
             ),
             Divider(
-              color: daThird, // Ensure this color is defined in daColors.dart
+              color: daThird,
               thickness: 1,
               indent: 15,
               endIndent: 180,
@@ -49,14 +48,13 @@ class _daListState extends State<daList> {
                 '• تصنيفات الكراء',
                 textAlign: TextAlign.right,
                 style: ArabicTextStyle(
-                  arabicFont: ArabicFont
-                      .dubai, // Assuming this class and constructor exists
+                  arabicFont: ArabicFont.dubai,
                   fontSize: 25,
                 ),
               ),
             ),
             Divider(
-              color: daThird, // Ensure this color is defined in daColors.dart
+              color: daThird,
               thickness: 1,
               indent: 15,
               endIndent: 180,

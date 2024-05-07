@@ -49,21 +49,29 @@ class _HomeState extends State<Home> {
           onTabChange: (value) {
             setState(() {
               tab = value;
-              print('This is the page :  $value');
             });
           },
           tabs: [
             GButton(
               icon: (tab == 0) ? Icons.search : Icons.search_outlined,
               text: 'إكتشاف',
+              textStyle: ArabicTextStyle(
+                  arabicFont: ArabicFont.avenirArabic,
+                  fontWeight: FontWeight.w600),
             ),
             GButton(
               icon: (tab == 1) ? Icons.list : Icons.list_outlined,
               text: 'تصنيفات',
+              textStyle: ArabicTextStyle(
+                  arabicFont: ArabicFont.avenirArabic,
+                  fontWeight: FontWeight.w600),
             ),
             GButton(
               icon: (tab == 2) ? Icons.person : Icons.person_outline,
               text: 'الحساب',
+              textStyle: ArabicTextStyle(
+                  arabicFont: ArabicFont.avenirArabic,
+                  fontWeight: FontWeight.w600),
             ),
           ]),
     );

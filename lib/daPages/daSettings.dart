@@ -138,7 +138,10 @@ class editacc extends StatefulWidget {
 class _editaccState extends State<editacc> {
   void _showCustomSnackbar(BuildContext context) {
     final snackbar = SnackBar(
-      content: Text("لقد تم تعديل حسابك "),
+      content: Text(
+        "لقد تم تعديل حسابك ",
+        style: ArabicTextStyle(arabicFont: ArabicFont.avenirArabic),
+      ),
       backgroundColor: daSecond,
       duration: Duration(seconds: 3), // Snackbar duration of 3 seconds
     );
@@ -315,6 +318,18 @@ class contract extends StatefulWidget {
 }
 
 class _contractState extends State<contract> {
+  void _showCustomSnackbar(BuildContext context) {
+    final snackbar = SnackBar(
+      content: Text(
+        "نشكركم على تعاقدك معنا، سوف نتواصل معكم في أقرب وقت",
+        style: ArabicTextStyle(arabicFont: ArabicFont.avenirArabic),
+      ),
+      backgroundColor: daSecond,
+      duration: Duration(seconds: 3), // Snackbar duration of 3 seconds
+    );
+    ScaffoldMessenger.of(context).showSnackBar(snackbar);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -327,6 +342,150 @@ class _contractState extends State<contract> {
             arabicFont: ArabicFont.avenirArabic,
             fontSize: 20,
             fontWeight: FontWeight.bold),
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            SizedBox(
+              height: 50,
+            ),
+            Center(
+              child: Text(
+                'الحرفيات الماكثة في البيت',
+                style: ArabicTextStyle(
+                    arabicFont: ArabicFont.cairo,
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            Container(
+              height: 30,
+              child: Divider(
+                // Divider between buttons
+                color: daThird,
+                thickness: 1,
+                indent: 50,
+                endIndent: 50,
+              ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: TextField(
+                decoration: InputDecoration(
+                  hintText: 'أدخل مجال التخصص الخاص بك',
+                  labelText: 'المجال',
+                  hintStyle: ArabicTextStyle(
+                    arabicFont: ArabicFont.avenirArabic,
+                  ),
+                  fillColor: dawhite,
+                  filled: true,
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(width: 1)),
+                  focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(15),
+                      borderSide: BorderSide(width: 2)),
+                ),
+              ),
+            ),
+            SizedBox(height: 10),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                children: [
+                  Expanded(
+                    flex: 2,
+                    child: TextField(
+                      decoration: InputDecoration(
+                        hintText: 'أدخل نوع المنتوج الخاص بك',
+                        labelText: 'نوع المنتوج',
+                        hintStyle: ArabicTextStyle(
+                          arabicFont: ArabicFont.avenirArabic,
+                        ),
+                        fillColor: dawhite,
+                        filled: true,
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide(width: 1)),
+                        focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(15),
+                            borderSide: BorderSide(width: 2)),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: TextField(
+                      decoration: InputDecoration(
+                        hintText: 'أدخل الكمية ',
+                        labelText: 'الكمية',
+                        hintStyle: ArabicTextStyle(
+                          arabicFont: ArabicFont.avenirArabic,
+                        ),
+                        fillColor: dawhite,
+                        filled: true,
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide(width: 1)),
+                        focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(15),
+                            borderSide: BorderSide(width: 2)),
+                      ),
+                      keyboardType: TextInputType.number,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 10),
+            Container(
+              height: 200,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: TextField(
+                  maxLines: null,
+                  expands: true,
+                  decoration: InputDecoration(
+                    hintText: 'أكتب تفاصيل أكثر حول عملك و تعاقدك معنا',
+                    labelText: 'التفاصيل',
+                    hintStyle: ArabicTextStyle(
+                      arabicFont: ArabicFont.avenirArabic,
+                    ),
+                    fillColor: dawhite,
+                    filled: true,
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: BorderSide(width: 1)),
+                    focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(15),
+                        borderSide: BorderSide(width: 2)),
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: daThird,
+                foregroundColor: dawhite,
+                fixedSize: Size(160, 50),
+                textStyle: ArabicTextStyle(
+                    arabicFont: ArabicFont.avenirArabic,
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500),
+              ),
+              onPressed: () async {
+                _showCustomSnackbar(context);
+                Navigator.pop(context);
+              },
+              child: Text('إرسال الطلب'),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -343,7 +502,10 @@ class _specialorderState extends State<specialorder> {
   void _showSnackBar(Color color, BuildContext context, String message) {
     final snackBar = SnackBar(
       backgroundColor: color,
-      content: Text(message),
+      content: Text(
+        message,
+        style: ArabicTextStyle(arabicFont: ArabicFont.avenirArabic),
+      ),
       duration: Duration(seconds: 3), // Personnalisez la durée si nécessaire
     );
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
@@ -372,8 +534,9 @@ class _specialorderState extends State<specialorder> {
               child: TextField(
                 controller: _messageController,
                 maxLines: null,
+                textDirection: TextDirection.rtl,
                 decoration: InputDecoration(
-                  hintText: 'Entrez votre message...',
+                  hintText: 'أكتب تفاصيل طلبك الخاص هنا...',
                   border: OutlineInputBorder(borderSide: BorderSide.none),
                 ),
               ),

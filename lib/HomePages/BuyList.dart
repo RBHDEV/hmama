@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hmama/Cards/BuyCard.dart';
 import 'package:hmama/Models/CardList.dart';
+import 'package:hmama/daPages/daBuyDetails.dart';
 
 class BuyList extends StatefulWidget {
   const BuyList({super.key});
@@ -13,7 +14,7 @@ class _BuyListState extends State<BuyList> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.fromLTRB(20, 5, 20, 0),
       child: GridView.builder(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
@@ -24,12 +25,20 @@ class _BuyListState extends State<BuyList> {
         itemCount: simpleBuyList.length,
         itemBuilder: (context, index) {
           CardList item = simpleBuyList[index];
-          return Card(
-            elevation: 5,
-            child: buy(
-              pic: item.pic,
-              name: item.name,
-              price: item.price,
+          return InkWell(
+            onTap: () async {
+              await Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => daBuyDetails(data: index)));
+            },
+            child: Card(
+              elevation: 5,
+              child: buy(
+                pic: item.pic,
+                name: item.name,
+                price: item.price,
+              ),
             ),
           );
         },
