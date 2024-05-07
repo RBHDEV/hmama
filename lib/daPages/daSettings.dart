@@ -27,7 +27,7 @@ class _daSettingsState extends State<daSettings> {
                 height: 200,
                 child: Image.asset('Image/user.png')),
             SizedBox(
-              height: 100,
+              height: 75,
             ),
             ElevatedButton.icon(
               style: ElevatedButton.styleFrom(
@@ -99,7 +99,7 @@ class _daSettingsState extends State<daSettings> {
               ),
             ),
             SizedBox(
-              height: 150,
+              height: 100,
             ),
             ElevatedButton.icon(
               style: ElevatedButton.styleFrom(
@@ -119,6 +119,11 @@ class _daSettingsState extends State<daSettings> {
               ),
               label: Text(
                 'تسجيل خروج',
+              ),
+            ),
+            Expanded(
+              child: SizedBox(
+                height: 100,
               ),
             ),
           ],
