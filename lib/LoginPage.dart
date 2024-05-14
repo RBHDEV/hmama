@@ -34,7 +34,7 @@ class _LoginPageState extends State<LoginPage> {
                 width: 200,
                 height: 200,
                 child: Image.asset(
-                  'Image/AppIco.png',
+                  'Image/AppNewLogo.jpg',
                 ),
               ),
               Text(

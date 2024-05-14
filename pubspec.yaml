@@ -34,24 +34,22 @@ dependencies:
   cupertino_icons: ^1.0.6
   flutter:
     sdk: flutter
-  flutter_localizations:
-    sdk: flutter
+  flutter_localization: ^0.2.0
   google_fonts: ^6.2.1
   google_nav_bar: ^5.0.6
-  icons_launcher: ^2.1.7
-  intl: any
+  intl: ^0.18.1
 
 dev_dependencies:
-  flutter_lints: ^3.0.0
+  flutter_lints: 4.0.0
   flutter_test:
     sdk: flutter
-icons_launcher:
-  image_path: "Image/AppIco.png"
-  platforms:
-    android:
-      enable: true
-    ios:
-      enable: true
+  flutter_launcher_icons: "^0.13.1"
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "Image/AppNewLogo.jpg"
+  min_sdk_android: 21 # android min sdk min:16, default 21
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter packages.

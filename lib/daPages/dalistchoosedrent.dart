@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:hmama/Cards/BuyCard.dart';
 import 'package:hmama/Models/CardList.dart';
 import 'package:hmama/daColors.dart';
-import 'package:hmama/daPages/daBuyDetails.dart';
 import 'package:hmama/daPages/daRentDetails.dart';
 
 class daListchoosedrent extends StatefulWidget {

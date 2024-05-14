@@ -16,7 +16,7 @@ class _daBuyDetailsState extends State<daRentDetails> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        foregroundColor: Colors.blueAccent,
+        foregroundColor: Colors.pink.shade400,
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),

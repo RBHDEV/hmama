@@ -27,7 +27,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         leading: Image.asset(
-          'Image/AppIco.png',
+          'Image/AppNewLogo.jpg',
         ),
         title: Text('حمامة'),
         titleTextStyle: ArabicTextStyle(
