@@ -43,6 +43,7 @@ dev_dependencies:
   flutter_lints: 4.0.0
   flutter_test:
     sdk: flutter
+<<<<<<< Updated upstream
   flutter_launcher_icons: "^0.13.1"
 
 flutter_launcher_icons:
@@ -50,6 +51,15 @@ flutter_launcher_icons:
   ios: true
   image_path: "Image/AppNewLogo.jpg"
   min_sdk_android: 21 # android min sdk min:16, default 21
+=======
+icons_launcher:
+  image_path: "Image/Icon.png"
+  platforms:
+    android:
+      enable: true
+    ios:
+      enable: true
+>>>>>>> Stashed changes
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter packages.

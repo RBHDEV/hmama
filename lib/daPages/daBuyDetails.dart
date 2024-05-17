@@ -16,7 +16,11 @@ class _daBuyDetailsState extends State<daBuyDetails> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+<<<<<<< Updated upstream
         foregroundColor: Colors.pink.shade400,
+=======
+        foregroundColor: Colors.pink[500],
+>>>>>>> Stashed changes
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
