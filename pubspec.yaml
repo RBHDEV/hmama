@@ -28,38 +28,29 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  animation_wrappers: ^3.0.0
   arabic_font: ^0.0.9
   botton_nav_bar: ^1.0.2
   cupertino_icons: ^1.0.6
   flutter:
     sdk: flutter
-  flutter_localization: ^0.2.0
+  flutter_localizations:
+    sdk: flutter
   google_fonts: ^6.2.1
   google_nav_bar: ^5.0.6
-  intl: ^0.18.1
+  http: ^1.2.1
+  table_calendar: ^3.1.1
 
 dev_dependencies:
-  flutter_lints: 4.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^3.0.0
   flutter_test:
     sdk: flutter
-<<<<<<< Updated upstream
-  flutter_launcher_icons: "^0.13.1"
 
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
   image_path: "Image/AppNewLogo.jpg"
-  min_sdk_android: 21 # android min sdk min:16, default 21
-=======
-icons_launcher:
-  image_path: "Image/Icon.png"
-  platforms:
-    android:
-      enable: true
-    ios:
-      enable: true
->>>>>>> Stashed changes
+  min_sdk_android: 21
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter packages.

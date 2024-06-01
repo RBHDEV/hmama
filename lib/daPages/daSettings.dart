@@ -357,7 +357,7 @@ class _contractState extends State<contract> {
             ),
             Center(
               child: Text(
-                'الحرفيات الماكثات في البيت',
+                'الحرفيات',
                 style: ArabicTextStyle(
                     arabicFont: ArabicFont.cairo,
                     fontSize: 29,
