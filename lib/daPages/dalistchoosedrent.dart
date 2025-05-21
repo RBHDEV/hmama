@@ -1,4 +1,5 @@
 import 'package:arabic_font/arabic_font.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:hmama/Cards/BuyCard.dart';
 import 'package:hmama/Models/CardList.dart';
@@ -155,7 +156,9 @@ class _ListchoosedbuyState extends State<daListchoosedrent> {
                         MaterialPageRoute(
                             builder: (context) =>
                                 daRentDetails(data: item.id)));
-                    print('This is the item : ${item.id}');
+                    if (kDebugMode) {
+                      print('This is the item : ${item.id}');
+                    }
                   },
                   child: Card(
                     elevation: 5,

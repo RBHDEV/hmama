@@ -1,7 +1,5 @@
 import 'package:arabic_font/arabic_font.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:hmama/daColors.dart';
 
 class daSettings extends StatefulWidget {

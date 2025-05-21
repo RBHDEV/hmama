@@ -35,8 +35,9 @@ class _HomeState extends State<daHome> {
                 curve: Curves.ease,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor:
-                          (aPage == 0) ? daThird : daThird.withOpacity(0.6),
+                      backgroundColor: (aPage == 0)
+                          ? daThird
+                          : daThird.withValues(alpha: 0.6),
                       foregroundColor: daBright,
                       textStyle: ArabicTextStyle(
                           arabicFont: ArabicFont.avenirArabic,
@@ -72,8 +73,9 @@ class _HomeState extends State<daHome> {
                 curve: Curves.ease,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor:
-                          (aPage == 1) ? daThird : daThird.withOpacity(0.6),
+                      backgroundColor: (aPage == 1)
+                          ? daThird
+                          : daThird.withValues(alpha: 0.6),
                       foregroundColor: daBright,
                       textStyle: ArabicTextStyle(
                           arabicFont: ArabicFont.avenirArabic,

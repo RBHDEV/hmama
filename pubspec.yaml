@@ -38,11 +38,13 @@ dependencies:
   google_fonts: ^6.2.1
   google_nav_bar: ^5.0.6
   http: ^1.2.1
+  rename_app: ^1.6.3
   table_calendar: ^3.1.1
 
 dev_dependencies:
-  flutter_launcher_icons: ^0.13.1
-  flutter_lints: ^3.0.0
+  change_app_package_name: ^1.5.0
+  flutter_launcher_icons: ^0.14.3
+  flutter_lints: ^5.0.0
   flutter_test:
     sdk: flutter
 
@@ -50,7 +52,6 @@ flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
   image_path: "Image/AppNewLogo.jpg"
-  min_sdk_android: 21
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter packages.

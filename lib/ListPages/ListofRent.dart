@@ -1,10 +1,8 @@
-import 'dart:ui';
-
 import 'package:arabic_font/arabic_font.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:hmama/daPages/dalistchoosedrent.dart';
 
+// ignore: must_be_immutable
 class listofRent extends StatelessWidget {
   List<String> Icons = [
     'Image/Icons/tradition.png',
@@ -41,7 +39,7 @@ class listofRent extends StatelessWidget {
               boxShadow: [
                 BoxShadow(
                   color: Colors.black
-                      .withOpacity(0.5), // Shadow color with some opacity
+                      .withValues(alpha: 0.5), // Shadow color with some opacity
                   spreadRadius: 0, // Spread radius
                   blurRadius: 5, // Blur radius
                   offset: Offset(0, 1), // Changes position of shadow

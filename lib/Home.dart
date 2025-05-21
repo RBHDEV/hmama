@@ -42,7 +42,7 @@ class _HomeState extends State<Home> {
         children: _pages,
       ),
       bottomNavigationBar: GNav(
-          tabBackgroundColor: daBright.withOpacity(0.5),
+          tabBackgroundColor: daBright.withValues(alpha: 0.5),
           color: daDark,
           backgroundColor: daBetween,
           gap: 4,
